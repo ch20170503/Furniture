@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="languages">
+            <item>默认</item>
+            <item>允许</item>
+            <item>拒绝</item>
+        </string-array>
+    <string-array name="zhouqi">
+        <item>年</item>
+        <item>月</item>
+        <item>日</item>
+    </string-array>
+    <string-array name="type">
+        <item>主机</item>
+        <item>设备</item>
+    </string-array>
+    <string-array name="type2">
+        <item>掉线</item>
+        <item>损坏</item>
+        <item>负荷</item>
+    </string-array>
+    <string-array name="yn">
+        <item>默认</item>
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+</resources>

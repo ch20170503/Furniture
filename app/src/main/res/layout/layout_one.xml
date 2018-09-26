@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/li_one"
+    android:layout_height="match_parent"
+    android:background="#AEDFFF">
+    <RelativeLayout
+        android:id="@+id/one_ge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#23c6c8"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="个人信息"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/touxiang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one_ge"
+        >
+        <com.hc.util.XCRoundImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/timg1"/>
+        <TextView
+            android:id="@+id/set_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="测试账号"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/xiahuax"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorTextGary"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/touxiang"/>
+    <com.maiml.library.BaseItemLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/xiahuax"
+        app:text_size  = "18"
+        app:icon_margin_left = "10"
+        app:icon_text_margin = "10"
+        app:item_height = "50"
+        app:right_text_margin = "10"
+        >
+    </com.maiml.library.BaseItemLayout>
+    <TextView
+        android:id="@+id/set_close"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@drawable/button_style"
+        android:text="退出登录"
+                />
+</RelativeLayout>

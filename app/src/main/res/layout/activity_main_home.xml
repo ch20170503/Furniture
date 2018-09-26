@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainHome">
+    <android.support.v4.widget.SlidingPaneLayout
+        android:id="@+id/sil_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--加载布局-->
+        <include layout="@layout/layout_one"></include>
+        <!--加载布局-->
+        <include layout="@layout/layou_two"></include>
+    </android.support.v4.widget.SlidingPaneLayout >
+</RelativeLayout>

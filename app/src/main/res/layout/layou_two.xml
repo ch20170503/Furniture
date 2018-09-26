@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/li_two"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    >
+    <RelativeLayout
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:background="#5ec9b4"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/img_laytwo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/account"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        <ImageView
+            android:id="@+id/addusers"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/toole_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="haha "
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    -->
+    <!-- 上面显示actionbar -->
+    <!-- 中间显示 fragment -->
+    <!-- 最下面显示tablayout -->
+
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#5ec9b4"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@android:color/white"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_bottom_container"
+        android:layout_below="@id/main_toolbar"
+        />
+
+
+</RelativeLayout>
